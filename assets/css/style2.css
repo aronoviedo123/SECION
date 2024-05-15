@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-size: 15px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(38, 39, 48);
+
+}
+
+nav {
+    margin-right: 6.25em;
+}
+
+
+
+#top {
+    display: none;
+
+}
+
+label {
+    display: flex;
+    justify-content: end;
+    margin-top: 0.625em;
+    font-size: 2.5em;
+    color: white;
+}
+
+#top:checked~ul li {
+    display: block;
+    margin-top: 0.25em;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+ul li {
+
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 2.5em;
+    background-color: rgba(255, 166, 0, 0.918);
+    font-size: 1.0625em;
+}
+
+ul li:hover {
+    background-color: rgb(231, 88, 88);
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-left: 2.5em;
+}
+
+h2 {
+    font-size: 2.4em;
+    text-align: center;
+    font-family: cursive;
+}
+
+.cuadro1 {
+    border: solid 0.25em black;
+    border-radius: 1.25em;
+    box-shadow: 0.125em 0.125em;
+    background-color: rgba(241, 241, 241, 0.925);
+    width: 35em;
+    height: 31.25em;
+    margin: 3.125em;
+    padding: 1.25em;
+}
+
+input[type="text"] {
+    background-color: rgba(212, 212, 212, 0.781);
+    width: 17em;
+    height: 3em;
+    border: solid 0.0625em black;
+    margin: 0.625em;
+    margin-left: 9.375em;
+    font-size: 1.25em;
+}
+
+.dato {
+    position: absolute;
+    width: 6.25em;
+    font-size: 1.0625em;
+
+}
+
+
+button {
+    margin-top: 0.3125em;
+    margin-left: 9.375em;
+    width: 18.75em;
+    height: 3.125em;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: rgb(87, 87, 87);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.resultado {
+    background-color: rgba(212, 212, 212, 0.781);
+    width: 18.75em;
+    height: 3.125em;
+    margin-left: 9.375em;
+    border: solid 0.0625em black;
+
+}
+
+.perro {
+    border: solid 0.0625em black;
+    width: 12.5em;
+    height: 12.5em;
+    margin-left: 10.625em;
+}
+
+img {
+    width: 12.5em;
+    height: 12.5em;
+}
+
+
+
+#res {
+    text-align: center;
+    font-size: 1.5625em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media(max-width:1400px) {
+    body {
+        font-size: 9px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-size: 15px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(38, 39, 48);
+
+}
+
+nav {
+    margin-right: 6.25em;
+}
+
+
+
+#top {
+    display: none;
+
+}
+
+label {
+    display: flex;
+    justify-content: end;
+    margin-top: 0.625em;
+    font-size: 2.5em;
+    color: white;
+}
+
+#top:checked~ul li {
+    display: block;
+    margin-top: 0.25em;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+ul li {
+
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 2.5em;
+    background-color: rgba(255, 166, 0, 0.918);
+    font-size: 1.0625em;
+}
+
+ul li:hover {
+    background-color: rgb(231, 88, 88);
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-left: 2.5em;
+}
+
+@media(max-width:1400px) {
+    body {
+        font-size: 9px;
+    }
+}

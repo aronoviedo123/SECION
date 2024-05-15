@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <title>Document</title>
+</head>
+
+<body style="background-image: url(assets/img/fondo3.jpg);">
+    <header>
+        <div class="menu">
+            <h1>BIENESTAR Y SALUD BOLIVIA</h1>
+            <nav>
+                <input type="checkbox" id="top">
+                <label for="top">Menu</label>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+
+                    <li><a href="index1.html">Calcular IMC</a></li>
+
+                    <li><a href="index2.html">Calcular edad mascota</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="content">
+            <div class="cuadro1">
+                <div class="imc">
+                    <h2>EDAD DE MI MASCOTA</h2>
+                    <p class="dato">Nombre:</p>
+                    <input type="text" id="name"><br>
+                    <p class="dato">Edad:</p>
+                    <input type="text" id="years"><br>
+                    <h3>FOTO DE TU MASCOTA</h3>
+                    <input type="file" id="files"><br>
+
+
+                    <button onclick="formula()">CALCULAR (FORMULA)</button>
+                    <button onclick="seven_years()">CALCULAR (FORMULA 7 AÑOS)</button>
+
+                </div>
+            </div>
+            <div class="cuadro1">
+                <h2>RESULTADO</h2>
+                <div class="perro">
+                    <img src="/assets/img/perro.jpg">
+                </div>
+                <p id="res"></p>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="./assets/java/java.js"></script>
+</body>
+
+</html>

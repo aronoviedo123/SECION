@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <title>Document</title>
+</head>
+
+<body style="background-image: url(assets/img/fondo2.jpg);">
+    <header>
+        <div class="menu">
+            <h1>BIENESTAR Y SALUD BOLIVIA</h1>
+            <nav>
+                <input type="checkbox" id="top">
+                <label for="top">Menu</label>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+
+                    <li><a href="index1.html">Calcular IMC</a></li>
+
+                    <li><a href="index2.html">Calcular edad mascota</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="content">
+            <div class="cuadro1">
+                <div class="imc">
+                    <h2>Calcular IMC</h2>
+                    <p class="dato">PESO:</p>
+                    <input type="text" id="peso"><br>
+                    <p class="dato">ALUTA:</p>
+                    <input type="text" id="altura"><br>
+                    <p class="dato">VALOR IMC:</p>
+                    <p class="resultado" id="res"></p>
+                    <button onclick="imc()">CALCULAR</button>
+                </div>
+            </div>
+            <div class="cuadro2">
+                <img src="assets/img/imc.png" alt="">
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="./assets/java/java.js"></script>
+</body>
+
+</html>
