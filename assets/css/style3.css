@@ -21,7 +21,7 @@ nav {
 
 }
 
-label {
+.menu label {
     display: flex;
     justify-content: end;
     margin-top: 0.625em;
@@ -33,6 +33,19 @@ label {
     display: block;
     margin-top: 0.25em;
 }
+
+#up:checked~.registro {
+    display: none;
+}
+
+#up:checked~.inicio {
+    display: initial;
+}
+
+.inicio {
+    display: none;
+}
+
 
 a:link,
 a:visited {
@@ -65,10 +78,11 @@ h2 {
     text-align: center;
     font-family: cursive;
 }
+
 .cuadro1 {
     border: solid 0.1em black;
     border-radius: 1.25em;
-    
+
     background-color: rgba(241, 241, 241, 0.925);
     width: 35em;
     height: 42.25em;
@@ -77,7 +91,21 @@ h2 {
     box-shadow: -0.0625em -0.0625em .375em 0 rgb(122, 221, 102), .25em .25rem 1em .125em rgb(63, 63, 63);
 }
 
-input[type=text], [type=password] {
+.cuadro2 {
+    border: solid 0.1em black;
+    border-radius: 1.25em;
+
+    background-color: rgba(241, 241, 241, 0.925);
+    width: 35em;
+    height: 35.25em;
+    margin: 3.125em;
+    padding: 1.25em;
+    box-shadow: -0.0625em -0.0625em .375em 0 rgb(122, 221, 102), .25em .25rem 1em .125em rgb(63, 63, 63);
+}
+
+
+input[type=text],
+[type=password] {
     background-color: rgba(248, 248, 248, 0.993);
     padding: 6px;
     margin: 5px 0;
@@ -85,8 +113,19 @@ input[type=text], [type=password] {
     width: 290px;
     height: 25px;
     padding-left: 10px;
-    margin-left: 110px;
 }
+
+input[type="text"].date {
+    background-color: rgba(248, 248, 248, 0.993);
+    padding: 6px;
+    margin: 5px 0;
+    border: 1px solid rgb(211, 211, 211);
+    width: 80px;
+    height: 25px;
+    padding-left: 10px;
+    margin-left: 0px;
+}
+
 .dato {
     position: absolute;
     width: 6.25em;
@@ -94,10 +133,8 @@ input[type=text], [type=password] {
 
 }
 
-
-button {
+.mandar {
     margin-top: 2.3125em;
-    margin-left: 9.375em;
     width: 16.75em;
     height: 3em;
     background-color: rgb(0, 119, 255);
@@ -107,7 +144,17 @@ button {
     border-radius: 1em;
     border: 0em;
     box-shadow: -0.0625em -0.0625em .375em 0 rgb(100, 165, 190), .25em .25em 1em .125em rgb(159, 197, 214);
+    text-align: center;
+    padding-top: 15px;
+}
 
+
+#up {
+    display: none;
+}
+
+#up2 {
+    display: none;
 }
 
 button:hover {
@@ -119,7 +166,7 @@ main {
     justify-content: center;
 }
 
-img{
+img {
     width: 200px;
     height: 200px;
     border-radius: 150px;

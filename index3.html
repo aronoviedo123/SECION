@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <title>Document</title>
+</head>
+
+<body style="background-image: url(assets/img/fondo.jpg);">
+    <header>
+        <div class="menu">
+            <h1>BIENESTAR Y SALUD BOLIVIA</h1>
+            <nav>
+                <input type="checkbox" id="top">
+                <label for="top">Menu</label>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="index3.html">Registrar usuario</a></li>
+
+                    <li><a href="index1.html">Calcular IMC</a></li>
+
+                    <li><a href="index2.html">Calcular edad mascota</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <input type="checkbox" id="up" onclick="registro()">
+
+        <div class="registro">
+
+            <div class="cuadro1">
+                <div class="imc">
+                    <h2>REGISTRAR USUARIO</h2>
+                    <center>
+                        <div><img src="./assets/img/incio.jpg" alt=""></div>
+                    </center>
+                    <center><input type="text" id="name1" placeholder="Nombres"><br>
+                        <input type="text" id="name2" placeholder="Apellido"><br>
+                        <input class="date" type="text" id="year" placeholder="Año">
+                        <input class="date" type="text" id="moth" placeholder="Mes">
+                        <input class="date" type="text" id="day" placeholder="Dia"><br>
+                        <input type="password" id="pas" placeholder="Contraseña"><br>
+                        <label for="up">
+                            <p class="mandar">Registrar Usuario</p>
+                        </label>
+                    </center>
+
+
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="up2" onclick="iniciar_secion()">
+
+        <div class="inicio">
+            <div class="cuadro2">
+                <div class="imc">
+                    <h2>INICIO SESION</h2>
+                    <center>
+                        <div><img src="./assets/img/regis.jpg" alt=""></div>
+
+                        <input type="text" id="ini_nam" placeholder="Numbre de usuario"><br>
+                        <input type="password" id="ini_pas" placeholder="contraseña"><br>
+
+
+                        <label for="up2">
+                            <p class="mandar">Iniciar Secion</p>
+                        </label>
+                    </center>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="./assets/java/java1.js"></script>
+</body>
+
+</html>
